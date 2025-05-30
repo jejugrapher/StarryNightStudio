@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>제주그래퍼 × 케미캐스트 | 사계리 별밤드림 스튜디오</title>
-    <meta name="description" content="제주 사계리에서 만나는 별밤사진관과 드론 촬영의 완벽한 조합. 케미캐스트와 함께하는 프리미엄 콘텐츠 제작.">
+    <title>제주그래퍼 × 케미캐스트 | Sky & Sea 프리미엄 체험</title>
+    <meta name="description" content="제주에서만 가능한 하늘과 바다의 완벽한 만남. 하모 돌고래 투어부터 별밤사진관까지, 프리미엄 웨딩 촬영의 새로운 기준.">
     
     <style>
         * {
@@ -42,7 +42,7 @@
         }
 
         .nav-logo {
-            font-size: 1.8em;
+            font-size: 1.6em;
             font-weight: bold;
             background: linear-gradient(135deg, #60a5fa, #a78bfa);
             -webkit-background-clip: text;
@@ -65,21 +65,6 @@
 
         .nav-menu a:hover {
             color: #60a5fa;
-        }
-
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #60a5fa;
-            transition: width 0.3s ease;
-        }
-
-        .nav-menu a:hover::after {
-            width: 100%;
         }
 
         .nav-cta {
@@ -129,12 +114,12 @@
             text-align: center;
             color: white;
             z-index: 10;
-            max-width: 800px;
+            max-width: 900px;
             padding: 0 20px;
         }
 
         .hero h1 {
-            font-size: 4em;
+            font-size: 3.5em;
             margin-bottom: 20px;
             background: linear-gradient(135deg, #60a5fa, #a78bfa, #fbbf24);
             -webkit-background-clip: text;
@@ -143,17 +128,25 @@
         }
 
         .hero .subtitle {
-            font-size: 1.6em;
-            margin-bottom: 30px;
+            font-size: 1.8em;
+            margin-bottom: 15px;
             opacity: 0.9;
             animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero .highlight {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            color: #fbbf24;
+            font-weight: bold;
+            animation: fadeInUp 1s ease-out 0.6s both;
         }
 
         .hero .description {
             font-size: 1.2em;
             margin-bottom: 40px;
             opacity: 0.8;
-            animation: fadeInUp 1s ease-out 0.6s both;
+            animation: fadeInUp 1s ease-out 0.9s both;
         }
 
         .cta-buttons {
@@ -161,7 +154,7 @@
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            animation: fadeInUp 1s ease-out 0.9s both;
+            animation: fadeInUp 1s ease-out 1.2s both;
         }
 
         .btn {
@@ -210,13 +203,13 @@
         }
 
         /* Floating Elements */
-        .floating-drone {
+        .floating-dolphin {
             position: absolute;
             top: 20%;
             right: 10%;
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, #60a5fa, #a78bfa);
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -289,14 +282,61 @@
             margin-right: auto;
         }
 
-        /* Services Section */
+        /* Sky & Sea Section */
+        .sky-sea {
+            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+            color: white;
+        }
+
+        .sky-sea-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 50px;
+            align-items: center;
+        }
+
+        .sky-sea-text h3 {
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .sky-sea-text p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        .sky-sea-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .feature-item strong {
+            display: block;
+            color: #fbbf24;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Premium Services */
         .services {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 40px;
         }
 
@@ -343,7 +383,7 @@
             color: white;
             padding: 8px 20px;
             border-radius: 20px;
-            font-size: 1.1em;
+            font-size: 1.2em;
             font-weight: bold;
             display: inline-block;
             margin-bottom: 20px;
@@ -352,6 +392,7 @@
         .service-features {
             list-style: none;
             margin-bottom: 30px;
+            text-align: left;
         }
 
         .service-features li {
@@ -366,6 +407,18 @@
             left: 0;
             color: #22c55e;
             font-weight: bold;
+        }
+
+        /* Premium Badge */
+        .premium-badge {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
         }
 
         /* Location Section */
@@ -435,89 +488,79 @@
             opacity: 0.9;
         }
 
-        /* Gallery Section */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+        /* Package Section */
+        .packages {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
         }
 
-        .gallery-item {
-            height: 250px;
-            background: linear-gradient(135deg, #64748b, #94a3b8);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2em;
-            text-align: center;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .gallery-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="25" cy="25" r="2" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1.5" fill="white" opacity="0.1"/></svg>');
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
-
-        /* Partnership Section */
-        .partnership {
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: white;
-        }
-
-        .partnership-content {
+        .package-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 50px;
-            align-items: center;
+            gap: 40px;
         }
 
-        .partnership-text h3 {
-            font-size: 2.5em;
-            margin-bottom: 25px;
-            background: linear-gradient(135deg, #60a5fa, #a78bfa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .package-card {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
         }
 
-        .partnership-text p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            opacity: 0.9;
-            line-height: 1.8;
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.15);
         }
 
-        .partnership-features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .feature-item {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 15px;
+        .package-header {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            color: white;
+            padding: 30px;
             text-align: center;
         }
 
-        .feature-item strong {
-            display: block;
-            color: #fbbf24;
+        .package-header h4 {
+            font-size: 1.8em;
             margin-bottom: 10px;
+        }
+
+        .package-price {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .package-content {
+            padding: 30px;
+        }
+
+        .package-timeline {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .package-timeline li {
+            padding: 10px 0;
+            border-left: 3px solid #3b82f6;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .package-timeline li::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 15px;
+            width: 12px;
+            height: 12px;
+            background: #3b82f6;
+            border-radius: 50%;
+        }
+
+        .time {
+            font-weight: bold;
+            color: #3b82f6;
         }
 
         /* Contact Section */
@@ -619,22 +662,22 @@
             .hero h1 {
                 font-size: 2.5em;
             }
-
+            
             .section-title {
                 font-size: 2.2em;
             }
-
+            
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-
+            
             .services-grid,
-            .gallery-grid {
+            .package-grid {
                 grid-template-columns: 1fr;
             }
 
-            .floating-drone,
+            .floating-dolphin,
             .floating-star {
                 display: none;
             }
@@ -657,12 +700,12 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">제주그래퍼 × 케미캐스트</div>
+            <div class="nav-logo">Sky & Sea 제주</div>
             <ul class="nav-menu">
                 <li><a href="#home">홈</a></li>
+                <li><a href="#sky-sea">Sky & Sea</a></li>
                 <li><a href="#services">서비스</a></li>
-                <li><a href="#location">위치</a></li>
-                <li><a href="#gallery">갤러리</a></li>
+                <li><a href="#packages">패키지</a></li>
                 <li><a href="#contact">예약</a></li>
             </ul>
             <a href="#contact" class="nav-cta">예약 문의</a>
@@ -671,96 +714,155 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="floating-drone">🚁</div>
+        <div class="floating-dolphin">🐋</div>
         <div class="floating-star">⭐</div>
         
         <div class="hero-content">
-            <h1>별밤드림 스튜디오</h1>
-            <div class="subtitle">제주 사계리에서 만나는 별과 하늘의 예술</div>
+            <h1>Sky & Sea 제주</h1>
+            <div class="subtitle">하늘과 바다를 잇는 프리미엄 체험</div>
+            <div class="highlight">하모 돌고래 투어 × 별밤사진관 × 드론 촬영</div>
             <div class="description">
-                별밤사진관 × 드론 촬영 × MCN 콘텐츠의 완벽한 조합<br>
-                산방산과 형제섬이 선사하는 천혜의 촬영 환경
+                제주에서만 가능한 특별한 이야기<br>
+                아침의 돌고래부터 밤의 별까지, 완벽한 하루
             </div>
             <div class="cta-buttons">
-                <a href="#services" class="btn btn-primary">서비스 보기</a>
-                <a href="#contact" class="btn btn-outline">예약 문의</a>
+                <a href="#sky-sea" class="btn btn-primary">🌊 Sky & Sea 체험하기</a>
+                <a href="#packages" class="btn btn-outline">📋 패키지 보기</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Sky & Sea Section -->
+    <section class="section sky-sea" id="sky-sea">
+        <div class="container">
+            <div class="sky-sea-content">
+                <div class="sky-sea-text fade-in">
+                    <h3>🌊⭐ Sky & Sea Wonders</h3>
+                    <p>오전에는 하모 돌고래와 함께 바다를, 저녁에는 별빛과 함께 하늘을 만나보세요.</p>
+                    <p>제주 사계리의 천혜 자연환경과 8년 전문 경력이 만들어내는 완벽한 하루입니다.</p>
+                    
+                    <div class="sky-sea-features">
+                        <div class="feature-item">
+                            <strong>🐋 하모 돌고래 투어</strong>
+                            <div>모슬포 프리미엄 투어</div>
+                        </div>
+                        <div class="feature-item">
+                            <strong>🚁 드론 촬영</strong>
+                            <div>산방산·형제섬 배경</div>
+                        </div>
+                        <div class="feature-item">
+                            <strong>⭐ 별밤사진관</strong>
+                            <div>웨딩급 전문 촬영</div>
+                        </div>
+                        <div class="feature-item">
+                            <strong>🎬 MCN 콘텐츠</strong>
+                            <div>케미캐스트 협업</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sky-sea-visual fade-in">
+                    <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 20px; text-align: center;">
+                        <h4 style="font-size: 2em; margin-bottom: 20px; color: #fbbf24;">완벽한 하루 일정</h4>
+                        <div style="display: grid; gap: 15px; text-align: left;">
+                            <div style="padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <strong>오전 10시</strong> - 하모 돌고래 투어 (90분)
+                            </div>
+                            <div style="padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <strong>오후 2시</strong> - 사계리 점심 & 휴식
+                            </div>
+                            <div style="padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <strong>오후 4시</strong> - 드론 촬영 (2시간)
+                            </div>
+                            <div style="padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                                <strong>저녁 8시</strong> - 별밤사진관 (3시간)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Services -->
     <section class="section services" id="services">
         <div class="container">
-            <h2 class="section-title fade-in">프리미엄 서비스</h2>
-            <p class="section-subtitle fade-in">전문적인 장비와 8년의 경험으로 완성하는 특별한 순간</p>
+            <h2 class="section-title fade-in">프리미엄 촬영 서비스</h2>
+            <p class="section-subtitle fade-in">웨딩 전문가 수준의 품질과 제주만의 특별한 경험</p>
             
             <div class="services-grid">
                 <div class="service-card fade-in">
-                    <span class="service-icon">🌟</span>
-                    <h3>별밤사진관</h3>
-                    <div class="service-price">3만원/인</div>
+                    <span class="service-icon">⭐</span>
+                    <h3>별밤 웨딩 촬영</h3>
+                    <div class="premium-badge">웨딩 전문가급</div>
+                    <div class="service-price">80만원~</div>
                     <ul class="service-features">
-                        <li>스마트폰 별사진 워크숍 (90분)</li>
-                        <li>전문가 라이트페인팅 촬영</li>
-                        <li>별자리 교육 및 스토리텔링</li>
-                        <li>포토샵 보정 기법 전수</li>
-                        <li>사계해변·송악산 촬영</li>
+                        <li>전문 라이트페인팅 기법</li>
+                        <li>별자리 배경 로맨틱 촬영</li>
+                        <li>고급 장비 + 전문 보정</li>
+                        <li>20-30장 고해상도 작품</li>
+                        <li>웨딩드레스 스페셜 (150만원)</li>
                     </ul>
-                    <p><strong>운영:</strong> 일일 8인, 주 5회</p>
                 </div>
 
                 <div class="service-card fade-in">
                     <span class="service-icon">🚁</span>
-                    <h3>드론 촬영</h3>
-                    <div class="service-price">85만원~</div>
+                    <h3>드론 웨딩 촬영</h3>
+                    <div class="premium-badge">시네마틱 영상</div>
+                    <div class="service-price">120만원~</div>
                     <ul class="service-features">
-                        <li>Mavic 3 Cine 시네마틱 촬영</li>
-                        <li>웨딩·커플 전문 패키지</li>
+                        <li>Mavic 3 Cine 전문 장비</li>
                         <li>산방산·형제섬 절경 배경</li>
-                        <li>4K 고화질 원본 제공</li>
-                        <li>전문 보정 및 편집</li>
+                        <li>4K 시네마틱 영상</li>
+                        <li>전문 편집 + 하이라이트</li>
+                        <li>풀 패키지 (180만원)</li>
                     </ul>
-                    <p><strong>장비:</strong> Mavic 3 Cine, Multispectral, Avata 2</p>
                 </div>
 
                 <div class="service-card fade-in">
-                    <span class="service-icon">🎬</span>
-                    <h3>MCN 콘텐츠 제작</h3>
-                    <div class="service-price">상담 후 결정</div>
+                    <span class="service-icon">🌊</span>
+                    <h3>Sky & Sea 패키지</h3>
+                    <div class="premium-badge">제주 유일</div>
+                    <div class="service-price">180만원~</div>
                     <ul class="service-features">
-                        <li>케미캐스트 협업 제작</li>
-                        <li>웹드라마·브이로그 촬영</li>
-                        <li>인플루언서 마케팅</li>
-                        <li>소셜미디어 최적화</li>
-                        <li>전문 스튜디오 시설</li>
+                        <li>하모 돌고래 투어 포함</li>
+                        <li>드론 + 별밤 통합 촬영</li>
+                        <li>완벽한 하루 스토리</li>
+                        <li>개인 맞춤 스토리텔링</li>
+                        <li>프리미엄 (280만원)</li>
                     </ul>
-                    <p><strong>특징:</strong> 기획부터 유통까지 원스톱</p>
                 </div>
 
                 <div class="service-card fade-in">
-                    <span class="service-icon">🏠</span>
-                    <h3>테마 숙박</h3>
-                    <div class="service-price">8만원~</div>
+                    <span class="service-icon">🎓</span>
+                    <h3>별사진 클래스</h3>
+                    <div class="premium-badge">소수 정예</div>
+                    <div class="service-price">5만원/인</div>
                     <ul class="service-features">
-                        <li>별빛 테마룸 (개인 테라스)</li>
-                        <li>크리에이터 스테이</li>
-                        <li>촬영 장비 대여</li>
-                        <li>1:1 기술 멘토링</li>
-                        <li>별밤사진관 할인</li>
+                        <li>스마트폰 별사진 마스터</li>
+                        <li>라이트페인팅 기법</li>
+                        <li>4명 정원 밀착 교육</li>
+                        <li>실전 촬영 + 보정</li>
+                        <li>개인 작품 완성</li>
                     </ul>
-                    <p><strong>위치:</strong> 산방산·용머리해안 도보 15분</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Location Section -->
-    <section class="section location" id="location">
+    <section class="section location">
         <div class="container">
             <h2 class="section-title fade-in" style="color: white;">사계리 최적 입지</h2>
             <p class="section-subtitle fade-in" style="color: #94a3b8;">제주에서 가장 아름다운 촬영 포인트들이 모여있는 곳</p>
             
             <div class="location-grid">
+                <div class="location-card fade-in">
+                    <h4>🐋 하모 돌고래 투어</h4>
+                    <div class="distance">15분</div>
+                    <p>모슬포 프리미엄 투어<br>차량 15분 거리</p>
+                </div>
+                
                 <div class="location-card fade-in">
                     <h4>🏔️ 산방산</h4>
                     <div class="distance">2km</div>
@@ -778,7 +880,7 @@
                     <div class="distance">1km</div>
                     <p>독특한 지질 구조<br>도보 10분 거리</p>
                 </div>
-                
+
                 <div class="location-card fade-in">
                     <h4>📸 사계해변</h4>
                     <div class="distance">500m</div>
@@ -786,15 +888,71 @@
                 </div>
 
                 <div class="location-card fade-in">
-                    <h4>🌅 송악산</h4>
-                    <div class="distance">5분</div>
-                    <p>일몰·별관측 명소<br>차량 5분 거리</p>
-                </div>
-
-                <div class="location-card fade-in">
                     <h4>⭐ 별 관측 환경</h4>
                     <div class="distance">9/10</div>
                     <p>전국 평균 대비 44% 우수<br>낮은 빛공해</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="section packages" id="packages">
+        <div class="container">
+            <h2 class="section-title fade-in">프리미엄 패키지</h2>
+            <p class="section-subtitle fade-in">당신만의 특별한 제주 이야기를 완성해드립니다</p>
+            
+            <div class="package-grid">
+                <div class="package-card fade-in">
+                    <div class="package-header">
+                        <h4>🌊 Dolphin to Stars</h4>
+                        <div class="package-price">180만원</div>
+                        <p>원데이 프리미엄 체험</p>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-timeline">
+                            <li><span class="time">오전 10시</span><br>하모 돌고래 투어 (90분)</li>
+                            <li><span class="time">오후 2시</span><br>사계리 점심 + 휴식</li>
+                            <li><span class="time">오후 4시</span><br>드론 촬영 (산방산/형제섬)</li>
+                            <li><span class="time">저녁 8시</span><br>별밤사진관 (라이트페인팅)</li>
+                        </ul>
+                        <p><strong>포함:</strong> 투어 + 촬영 + 편집 + 앨범 제작</p>
+                        <a href="#contact" class="btn btn-primary" style="width: 100%; margin-top: 20px;">예약하기</a>
+                    </div>
+                </div>
+
+                <div class="package-card fade-in">
+                    <div class="package-header">
+                        <h4>💑 제주 하늘바다 허니문</h4>
+                        <div class="package-price">280만원</div>
+                        <p>1박 2일 웨딩 스페셜</p>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-timeline">
+                            <li><span class="time">1일차</span><br>돌고래 투어 + 웨딩 드론 촬영</li>
+                            <li><span class="time">1박</span><br>사계리 스튜디오 숙박</li>
+                            <li><span class="time">2일차</span><br>별밤 웨딩 촬영 + 앨범 제작</li>
+                        </ul>
+                        <p><strong>특징:</strong> 신혼여행 맞춤 스토리텔링</p>
+                        <a href="#contact" class="btn btn-primary" style="width: 100%; margin-top: 20px;">예약하기</a>
+                    </div>
+                </div>
+
+                <div class="package-card fade-in">
+                    <div class="package-header">
+                        <h4>📸 MZ 인생샷 패키지</h4>
+                        <div class="package-price">120만원</div>
+                        <p>SNS 핫플 투어</p>
+                    </div>
+                    <div class="package-content">
+                        <ul class="package-timeline">
+                            <li><span class="time">오후</span><br>사계리 핫플 드론 촬영</li>
+                            <li><span class="time">저녁</span><br>별사진 클래스 + 촬영</li>
+                            <li><span class="time">추가</span><br>즉석 편집 + SNS 업로드</li>
+                        </ul>
+                        <p><strong>특징:</strong> "인생샷 보장" + 바이럴 마케팅</p>
+                        <a href="#contact" class="btn btn-primary" style="width: 100%; margin-top: 20px;">예약하기</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -808,27 +966,27 @@
             <div class="stats-grid">
                 <div class="stat-item fade-in">
                     <span class="stat-number">8</span>
-                    <div class="stat-label">년의 전문 경험</div>
+                    <div class="stat-label">년의 전문 경력</div>
                 </div>
                 
                 <div class="stat-item fade-in">
-                    <span class="stat-number">3,430</span>
+                    <span class="stat-number">4,390</span>
                     <div class="stat-label">만원 월 매출 목표</div>
                 </div>
                 
                 <div class="stat-item fade-in">
-                    <span class="stat-number">160</span>
-                    <div class="stat-label">명/월 별밤사진관</div>
+                    <span class="stat-number">180</span>
+                    <div class="stat-label">만원 Sky & Sea 패키지</div>
                 </div>
                 
                 <div class="stat-item fade-in">
-                    <span class="stat-number">30</span>
-                    <div class="stat-label">건/월 드론 촬영</div>
+                    <span class="stat-number">15</span>
+                    <div class="stat-label">분 하모 투어 거리</div>
                 </div>
 
                 <div class="stat-item fade-in">
-                    <span class="stat-number">7</span>
-                    <div class="stat-label">개 유튜브 채널</div>
+                    <span class="stat-number">150</span>
+                    <div class="stat-label">만원 별밤 웨딩 스페셜</div>
                 </div>
 
                 <div class="stat-item fade-in">
@@ -839,89 +997,11 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="section" id="gallery">
-        <div class="container">
-            <h2 class="section-title fade-in">포트폴리오 갤러리</h2>
-            <p class="section-subtitle fade-in">제주그래퍼의 전문성이 담긴 작품들</p>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item fade-in">
-                    🌟 별밤사진관<br>라이트페인팅 작품
-                </div>
-                
-                <div class="gallery-item fade-in">
-                    🚁 산방산 배경<br>웨딩 드론 촬영
-                </div>
-                
-                <div class="gallery-item fade-in">
-                    🏝️ 형제섬 은하수<br>별 관측 체험
-                </div>
-                
-                <div class="gallery-item fade-in">
-                    📸 사계해변<br>포트홀 풍경 촬영
-                </div>
-                
-                <div class="gallery-item fade-in">
-                    🎬 웹드라마<br>사계리 로케이션
-                </div>
-                
-                <div class="gallery-item fade-in">
-                    🌅 송악산 일몰<br>타임랩스 영상
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Partnership Section -->
-    <section class="section partnership">
-        <div class="container">
-            <div class="partnership-content">
-                <div class="partnership-text fade-in">
-                    <h3>케미캐스트 × 제주그래퍼</h3>
-                    <p>부산 기반 MCN 케미캐스트와 제주 전문 촬영팀 제주그래퍼의 협업으로 탄생한 프리미엄 콘텐츠 허브입니다.</p>
-                    <p>웹드라마 제작부터 인플루언서 마케팅까지, 기획부터 유통까지 원스톱 서비스를 제공합니다.</p>
-                    
-                    <div class="partnership-features">
-                        <div class="feature-item">
-                            <strong>콘텐츠 제작</strong>
-                            <div>월 750만원 수익</div>
-                        </div>
-                        <div class="feature-item">
-                            <strong>브랜딩 효과</strong>
-                            <div>제주 대표 MCN</div>
-                        </div>
-                        <div class="feature-item">
-                            <strong>IP 개발</strong>
-                            <div>웹드라마 시리즈</div>
-                        </div>
-                        <div class="feature-item">
-                            <strong>네트워크</strong>
-                            <div>전국 크리에이터</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="partnership-visual fade-in">
-                    <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 20px; text-align: center;">
-                        <h4 style="font-size: 2em; margin-bottom: 20px; color: #fbbf24;">협업 시너지</h4>
-                        <div style="display: grid; gap: 15px;">
-                            <div>✓ 전문 촬영 기술 + MCN 마케팅</div>
-                            <div>✓ 사계리 로케이션 + 콘텐츠 IP</div>
-                            <div>✓ 현지 전문성 + 전국 유통망</div>
-                            <div>✓ 실시간 제작 + 즉시 업로드</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section class="section contact" id="contact">
         <div class="container">
             <h2 class="section-title fade-in">예약 및 문의</h2>
-            <p class="section-subtitle fade-in">특별한 순간을 함께 만들어가요</p>
+            <p class="section-subtitle fade-in">제주에서만 가능한 특별한 순간을 함께 만들어가요</p>
             
             <div class="contact-grid">
                 <div class="contact-card fade-in">
@@ -941,11 +1021,11 @@
                 </div>
 
                 <div class="contact-card fade-in">
-                    <span class="contact-icon">📍</span>
-                    <h4>스튜디오 방문</h4>
-                    <div class="contact-info">제주시 산천단동1길 15</div>
-                    <p>사전 예약 필수<br>장비 시연 및 포트폴리오 확인</p>
-                    <a href="#location" class="btn btn-primary" style="margin-top: 15px;">위치 보기</a>
+                    <span class="contact-icon">🐋</span>
+                    <h4>하모 돌고래 투어</h4>
+                    <div class="contact-info">모슬포 연계</div>
+                    <p>프리미엄 투어 업체 제휴<br>패키지 할인 적용</p>
+                    <a href="#packages" class="btn btn-primary" style="margin-top: 15px;">패키지 보기</a>
                 </div>
 
                 <div class="contact-card fade-in">
@@ -957,11 +1037,12 @@
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 60px; padding: 40px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); border-radius: 25px; color: white;">
-                <h3 style="font-size: 2em; margin-bottom: 20px;">🚀 지금 바로 시작하세요!</h3>
-                <p style="font-size: 1.2em; margin-bottom: 20px;">평균 응답 시간: <strong>2시간 이내</strong> | 무료 견적: <strong>24시간 이내</strong></p>
-                <a href="tel:010-6778-9199" class="btn" style="background: white; color: #3b82f6; margin-right: 15px;">📞 무료 상담받기</a>
-                <a href="mailto:whipia@naver.com" class="btn btn-outline" style="color: white; border-color: white;">📧 견적 문의</a>
+            <div style="text-align: center; margin-top: 60px; padding: 40px; background: linear-gradient(135deg, #06b6d4, #3b82f6); border-radius: 25px; color: white;">
+                <h3 style="font-size: 2em; margin-bottom: 20px;">🌊⭐ Sky & Sea 체험 예약</h3>
+                <p style="font-size: 1.2em; margin-bottom: 20px;">제주에서만 가능한 하늘과 바다의 완벽한 만남</p>
+                <p style="margin-bottom: 25px;">평균 응답 시간: <strong>2시간 이내</strong> | 무료 견적: <strong>24시간 이내</strong></p>
+                <a href="tel:010-6778-9199" class="btn" style="background: white; color: #06b6d4; margin-right: 15px;">📞 Sky & Sea 예약</a>
+                <a href="mailto:whipia@naver.com" class="btn btn-outline" style="color: white; border-color: white;">📧 맞춤 견적 문의</a>
             </div>
         </div>
     </section>
@@ -969,8 +1050,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <h3>제주그래퍼 × 케미캐스트</h3>
-            <p>제주 사계리에서 상상 그 이상의 현실을 만나보세요</p>
+            <h3>Sky & Sea 제주 × 케미캐스트</h3>
+            <p>제주 사계리에서 하늘과 바다를 잇는 특별한 이야기를 시작하세요</p>
             
             <div class="footer-links">
                 <a href="https://www.youtube.com/@jejugrapher">jejugrapher (메인)</a>
@@ -978,12 +1059,16 @@
                 <a href="https://www.youtube.com/@360VRjeju">360VRjeju</a>
                 <a href="https://www.youtube.com/@starrynight2167">별밤사진관</a>
                 <a href="https://sketchfab.com/Hyun-seok.Jun">3D 갤러리</a>
+                <a href="https://www.chemycast.com/">케미캐스트</a>
             </div>
 
             <div class="footer-bottom">
-                <p>© 2024 제주그래퍼(Jejugrapher) × 케미캐스트(Chemycast). All rights reserved.</p>
+                <p>© 2024 제주그래퍼 × 케미캐스트 × 하모 돌고래 투어. All rights reserved.</p>
                 <p style="margin-top: 15px;">
-                    📞 010-6778-9199 | 📧 whipia@naver.com | 📍 제주특별자치도 제주시 산천단동1길 15
+                    📞 010-6778-9199 | 📧 whipia@naver.com | 📍 제주특별자치도 서귀포시 안덕면 사계남로 43
+                </p>
+                <p style="margin-top: 10px; color: #fbbf24;">
+                    <strong>"제주에서만 가능한 하늘과 바다의 완벽한 만남"</strong>
                 </p>
             </div>
         </div>
@@ -1033,15 +1118,6 @@
             } else {
                 navbar.style.background = 'rgba(15, 23, 42, 0.95)';
             }
-        });
-
-        // Loading Animation
-        window.addEventListener('load', function() {
-            document.body.style.opacity = '0';
-            setTimeout(() => {
-                document.body.style.transition = 'opacity 0.5s ease';
-                document.body.style.opacity = '1';
-            }, 100);
         });
     </script>
 </body>
